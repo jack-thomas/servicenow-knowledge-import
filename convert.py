@@ -15,11 +15,8 @@ knowledge_base = input("Knowledge Base sys_id: ")
 
 # File Structure
 in_path  = './Input (Word)/'
-in_file  = in_path + title + '.docx'
 int_path = './Intermediary (Markdown)/'
-int_file = int_path + title + '.md'
 out_path = './Output (HTML)/'
-out_file = out_path + title + '.html'
 if not os.path.exists(in_path):
     os.makedirs(in_path)
 if not os.path.exists(int_path):
@@ -30,6 +27,9 @@ if not os.path.exists(out_path):
 for os_file in os.listdir(in_path):
     # File Structure
     title = '.'.join(os_file.split(".")[:-1])
+    in_file  = in_path + title + '.docx'
+    int_file = int_path + title + '.md'
+    out_file = out_path + title + '.html'
     # ServiceNow Parameters
     headers = {"Content-Type":"application/json","Accept":"application/json"}
     # Actual Script
