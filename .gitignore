@@ -1,0 +1,9 @@
+# Ignore the temporary directories that the script uses
+/Input (Word)/*
+/Intermediary (Markdown)/*
+/Output (HTML)/*
+
+# Don't include the source or intermediary files
+*.docx
+*.md
+*.html
