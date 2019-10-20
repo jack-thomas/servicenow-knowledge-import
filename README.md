@@ -8,6 +8,7 @@ Important notes:
 
 - This method does not support Knowledge Management V3 (i.e. version controlled knowledge). It shouldn't be hard to add, though. Feel free to submit a PR.
 - This method does not support custom fields. The only fields it sets are the Knowledge Base, Title (Short Description), and Contents (Text). Feel free to fork the repo to add your own custom field support.
+- The Windows commands below assume that Python 3 is the only (or default) version of Python installed. I have not validated any of this with Python 2.
 
 # How to Use
 
@@ -61,4 +62,18 @@ Windows (Powershell):
 Linux (Bash):
 $ cd ~/git/servicenow-knowledge-import
 $ mkdir Input\ \(Word\)/
+```
+
+Add your ``.docx`` files to that directory.
+
+## 3. Run the Conversion Program
+
+```
+Windows (Powershell):
+> cd C:\Users\Owner\Desktop\Git\servicenow-knowledge-import
+> python .\convert.py
+
+Linux (Bash):
+$ cd ~/git/servicenow-knowledge-import
+$ python3 ./convert.py
 ```
