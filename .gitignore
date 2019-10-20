@@ -7,3 +7,6 @@
 *.docx
 *.md
 *.html
+
+# Do include README.md, though
+!README.md
