@@ -6,6 +6,7 @@ Unfortunately, this process is quite limited, and it wrecks formatting far more 
 
 Important notes:
 
+- This method requires a local password in the ServiceNow instance. This means that SSO accounts are *not* supported.
 - This method does not support Knowledge Management V3 (i.e. version controlled knowledge). It shouldn't be hard to add, though. Feel free to submit a PR.
 - This method does not support custom fields. The only fields it sets are the Knowledge Base, Title (Short Description), and Contents (Text). Feel free to fork the repo to add your own custom field support.
 - The Windows commands below assume that Python 3 is the only (or default) version of Python installed. I have not validated any of this with Python 2.
